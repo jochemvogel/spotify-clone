@@ -1,6 +1,4 @@
-# Spotjoch
-
-@TODO: Nog even goed naar kijken en het een en ander updaten. Want die naming moet nog anders en misschien kun je er wel 1 repo van maken (Turborepo, wat)
+# Spotify Clone Front-end
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
