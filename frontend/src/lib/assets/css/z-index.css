@@ -1,0 +1,49 @@
+/* Background div */
+#background {
+	z-index: -1;
+}
+
+/* Cards */
+article {
+	z-index: 1;
+}
+
+/* Buttons */
+button {
+	z-index: 1;
+}
+
+/* Main content */
+main {
+	z-index: 1;
+}
+
+/* Video player needs to be on top of the content */
+.video-player {
+	z-index: 2;
+}
+
+/* On hover it's possible to resize the video  */
+.resize-corner {
+	z-index: 2;
+}
+
+/* Item that needs to be visible on every page */
+header {
+	z-index: 3;
+}
+
+/* Item that needs to be visible on every page */
+nav {
+	z-index: 3;
+}
+
+/* Item that needs to be visible on every page */
+.now-playing-bar {
+	z-index: 3;
+}
+
+/* Error messages need to be on top of everything */
+.container__error {
+	z-index: 10;
+}

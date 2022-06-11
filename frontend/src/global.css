@@ -1,0 +1,142 @@
+@import '$lib/assets/css/z-index.css';
+
+:root {
+	/* Colors */
+	--color-black: hsl(0, 0%, 0%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-green: hsl(141, 73%, 42%);
+	--color-green-bg: hsl(141, 73%, 23%); /* AAA WCAG Contrast */
+
+	--color-black-bg: hsl(0, 0%, 7%);
+	--color-black-components: hsl(0, 0%, 9%);
+
+	--color-light-grey: hsl(0, 0%, 70%);
+	--color-grey: hsl(0, 0%, 77%);
+	--color-dark-grey: hsl(0, 0%, 33%);
+
+	--color-card-bg: hsla(0, 0%, 100%, 10%);
+	--color-card-selected-bg: hsla(0, 0%, 100%, 20%);
+	--color-card-hover: hsl(0, 0%, 16%);
+
+	/* Gradients */
+	--top-bg-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, #121212 100%);
+
+	/* Box Shadows */
+	--box-shadow-md: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* === FONTS === */
+
+/*
+ * Legal Disclaimer
+ *
+ * These web fonts are licensed exclusively for use on the following:
+ * spotify.com
+ *
+ * It is strictly forbidden to download or use these fonts on any other website domain or media.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2018
+ */
+
+@font-face {
+	font-family: 'CircularSpotify';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/CircularSpotifyTxT-Book.eot');
+	src: url('/fonts/CircularSpotifyTxT-Book.svg') format('svg'),
+		url('/fonts/CircularSpotifyTxT-Book.ttf') format('truetype'),
+		url('/fonts/CircularSpotifyTxT-Book.woff') format('woff'),
+		url('/fonts/CircularSpotifyTxT-Book.woff2') format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CircularSpotify';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/CircularSpotifyTxT-Bold.eot');
+	src: url('/fonts/CircularSpotifyTxT-Bold.svg') format('svg'),
+		url('/fonts/CircularSpotifyTxT-Bold.ttf') format('truetype'),
+		url('/fonts/CircularSpotifyTxT-Bold.woff') format('woff'),
+		url('/fonts/CircularSpotifyTxT-Bold.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* === GLOBAL STYLES === */
+
+html {
+	background-color: var(--color-black-bg);
+}
+
+body {
+	background-color: var(--color-black-bg);
+	margin: 0;
+	padding: 0;
+	font-family: 'CircularSpotify', Helvetica, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small {
+	color: var(--color-white);
+	margin: 0;
+}
+
+ol,
+ul {
+	list-style-type: none;
+	list-style-position: inside;
+	padding-left: 0;
+}
+
+main {
+	max-width: 1955px;
+	grid-area: main;
+	padding: 0 2em 7.5em 2em;
+	min-height: 100vh;
+}
+
+@media screen and (max-width: 858px) {
+	main {
+		padding: 0 0 10em 1em;
+	}
+}
+
+button {
+	border: none;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button.disabled {
+	cursor: not-allowed;
+	opacity: 0.1;
+}
+
+button.disabled:hover {
+	transform: none !important;
+}
+
+article {
+	user-select: none;
+}
+
+@media screen and (max-width: 400px) {
+	article {
+		max-width: 90vw;
+	}
+}
