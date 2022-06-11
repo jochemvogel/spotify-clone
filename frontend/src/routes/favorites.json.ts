@@ -2,7 +2,7 @@ import type { RequestHandler } from '@sveltejs/kit';
 
 export const get: RequestHandler = async () => {
 	try {
-		const response = await fetch('https://spotjoch.netlify.app/index.json');
+		const response = await fetch('https://spotify-clone.jchm.dev/index.json');
 
 		if (response.ok) {
 			const data = await response.json();

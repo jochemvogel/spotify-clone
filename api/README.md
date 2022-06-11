@@ -1,4 +1,4 @@
-# Jochspot api
+# Spotify Clone API
 
 Node.js is used to dynamically create a REST endpoint for every playlist that is requested. This step was necessary for retrieving public playlist data from the Spotify API. [Express application generator](https://expressjs.com/en/starter/generator.html) is used to quickly generate this app.
 
