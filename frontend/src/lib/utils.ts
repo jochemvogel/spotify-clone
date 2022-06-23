@@ -35,7 +35,7 @@ export function getCardIndex(card: VideoCardType, array: Array<VideoCardType>): 
  * @returns {Array} - All the favorite cards
  */
 export async function fetchFavoritesData(): Promise<FavoritePlaylistItem[]> {
-	const res = await fetch('https://spotify.jchm.dev/favorites.json');
+	const res = await fetch('https://spotify-backup.jchm.dev/favorites.json');
 
 	if (res.ok) {
 		const result = await res.json();
@@ -45,6 +45,6 @@ export async function fetchFavoritesData(): Promise<FavoritePlaylistItem[]> {
 	const { message } = await res.json();
 
 	return {
-		error: new Error(message)
+		error: new Error('[fetchFavData(): ]', message)
 	};
 }
