@@ -1,6 +1,6 @@
 # Spotify Clone
 
-**[Live link](https://spotify-clone.jchm.dev/)**
+**[Live link](https://spotify.jchm.dev/)**
 
 This is a Spotify clone created with Svelte(Kit) and Node. I don't know why I made this, but it was quite fun.
 
